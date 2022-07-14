@@ -1,0 +1,8 @@
+# Create the Docker image with the latest tag, for Rosetta-aware, M1 chips.
+.PHONY: docker-build-m1-v22
+docker-build-m1-v22:
+	docker build --platform linux/arm64/v8 --no-cache -f Dockerfile.M1-V22 \
+	 --build-arg AAT_VERSION=52ebaae5c5805c260f0f4c291677ca397ceb9c64 \
+	 --build-arg PGG_VERSION=c647096715e5de93a6c247ef2edaf19ca3f28d75 \
+	 -t $(IMAGE_NAME):$(IMAGE_VERSION) .
+	# docker tag $(IMAGE_NAME):$(IMAGE_VERSION) $(IMAGE_NAME):latest

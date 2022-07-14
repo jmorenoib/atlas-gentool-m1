@@ -33,6 +33,8 @@ versioned:
 	 --build-arg PGP_VERSION=$(PGPVersion) \
 	 -t $(IMAGE_NAME):$(IMAGE_VERSION) .
 
+include Makefile.M1
+
 .PHONY: clean
 clean:
 	docker rmi -f $(IMAGE_NAME)
