@@ -56,7 +56,7 @@ import:
 
   # preprocessing generator
   - package: github.com/infobloxopen/protoc-gen-preprocess
-    version: 5c1ed16513911d16154b98f71560f451c14f4786
+    version: 11d48fd3869c0cde6f4d4d95c4bc6d24a23a3353
 
   - package: github.com/jinzhu/gorm
     version: v1.9.1
