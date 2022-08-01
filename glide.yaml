@@ -1,0 +1,109 @@
+---
+## Missing commit hashes taken from May 28, 2019
+import:
+  # standard proto code generator
+  - package: github.com/golang/protobuf
+    version: v1.0.0
+
+  # alternative proto code generator
+  - package: github.com/gogo/protobuf
+    version: v1.0.0
+
+  # field_mask source
+  # - package: github.com/google/protobuf
+
+  # HTTP-gRPC reverse-proxy code generator
+  - package: github.com/grpc-ecosystem/grpc-gateway
+    version: v1.4.1
+
+  # grpc-gateway dependency
+  - package: github.com/golang/glog
+    version: 23def4e6c14b4da8ac2ed8007337bc5eb5007998
+
+  # generated googleapis proto files
+  - package: google.golang.org/genproto
+    version: 2b5a72b8730b0b16380010cfe5286c42108d88e7
+
+  # googleapis proto files
+  - package: github.com/googleapis/googleapis
+    version: 79d2054a2380a3567d2c8bd57735155370c39840
+
+  # proto2: validation code generator
+  - package: github.com/lyft/protoc-gen-validate
+    version: v0.0.7
+
+  # proto3: validation code generator
+  - package: github.com/mwitkow/go-proto-validators
+    version: a55ca57f374a8846924b030f534d8b8211508cf0
+
+  # documentation code generator
+  - package: github.com/pseudomuto/protoc-gen-doc
+    version: v1.0.0
+
+  # gorm code generator
+  - package: github.com/infobloxopen/protoc-gen-gorm
+    version: 29dcc0063a9883a1e83020cd652141adaf038281
+
+  # atlas application toolkit
+  - package: github.com/infobloxopen/atlas-app-toolkit
+    version: b23e532cb19e23e3bb1313ec0512a7483bfb2600
+
+  # atlas query permission validaton generator
+  - package: github.com/infobloxopen/protoc-gen-atlas-query-validate
+    version: a3e2c33a3b97576d53574ed8fb229863f8d8af91
+
+  # atlas validaton generator
+  - package: github.com/infobloxopen/protoc-gen-atlas-validate
+    version: 97759d93b68f33876bf6e3672af27d9277f4b3c7
+
+  # preprocessing generator
+  - package: github.com/infobloxopen/protoc-gen-preprocess
+    version: 8a9f6d090f3f9784c8df95a4319b5b0ca7c547c7
+
+  - package: github.com/jinzhu/gorm
+    version: v1.9.1
+
+  - package: github.com/jinzhu/inflection
+    version: v1.0.0
+
+#   - package: github.com/chrusty/protoc-gen-jsonschema
+#     version: v0.9.8
+
+#   - package: github.com/alecthomas/jsonschema
+#     version: 7152f22193c99d748515db8612354f96c5e2c71a
+
+#   # - package: github.com/golang/protobuf
+#   #   version: v1.3.2
+
+#   - package: github.com/iancoleman/orderedmap
+#     version: 7894308ac2dcf3293b3473b56a5a5f39fb230cf8
+
+#   - package: github.com/konsorten/go-windows-terminal-sequences
+#     version: v1.0.2
+
+#   - package: github.com/kr/pretty
+#     version: v0.1.0
+
+#   - package: github.com/sirupsen/logrus
+#     version: v1.4.2
+
+#   - package: github.com/stretchr/testify
+#     version: v1.4.0
+
+#   - package: github.com/xeipuuv/gojsonpointer
+#     version: df4f5c81cb3b310899c091852a576ea7d178aedb
+
+#   - package: github.com/xeipuuv/gojsonreference
+#     version: bd5ef7bd5415a7ac448318e64f11a24cd21e594b
+
+#   - package: github.com/xeipuuv/gojsonschema
+#     version: v1.1.0
+
+#   - package: golang.org/x/sys
+#     version: f8518d3b3627146e88bd43ca73045e1b8d8eb6c6
+
+#   - package: gopkg.in/check.v1
+#     version: 788fd78401277ebd861206a03c884797c6ec5541
+
+
+
