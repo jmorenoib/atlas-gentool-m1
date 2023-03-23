@@ -1,0 +1,12 @@
+# Create the Docker image with the latest tag.
+.PHONY: docker-build-m1
+docker-build-m1:
+	docker build --no-cache -f Dockerfile.M1 \
+	 --build-arg AAT_VERSION=76c7b8443eeb6f44103fc0912298b3b2d81071ee \
+	 --build-arg PGG_VERSION=bf272cb8b2ff35f4238405112b011582d16e7add \
+	 --build-arg PGAQ_VERSION=448c83354bec5fc6b9635c7ee4b403dafb3367b0 \
+	 --build-arg PGAV_VERSION=2417483743e6530025cf050c54818ccc59e6f9ff \
+	 --build-arg PGP_VERSION=0dc0bcbafc8d9ac0a62f7d3117fd82eb62ec9ce1 \
+	 -t $(IMAGE_NAME):$(IMAGE_VERSION) .
+	# docker tag $(IMAGE_NAME):$(IMAGE_VERSION) $(IMAGE_NAME):latest
+

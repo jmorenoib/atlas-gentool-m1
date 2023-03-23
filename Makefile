@@ -1,6 +1,6 @@
 # Utility docker image to generate Go files from .proto definition.
 # https://github.com/infobloxopen/atlas-gentool
-IMAGE_NAME := infoblox/atlas-gentool
+IMAGE_NAME := infoblox/atlas-gentool-m1
 
 GO_PATH              	:= /go
 SRCROOT_ON_HOST      	:= $(shell dirname $(abspath $(lastword $(MAKEFILE_LIST))))
@@ -40,6 +40,8 @@ versioned:
 	 --build-arg PGAV_VERSION=$(PGAVVersion) \
 	 --build-arg PGP_VERSION=$(PGPVersion) \
 	 -t $(IMAGE_NAME):$(IMAGE_VERSION) .
+
+include Makefile.M1
 
 .PHONY: clean
 clean:
